@@ -1,3 +1,8 @@
+Logic Overview:
+This PHP script accepts a hierarchical sequence of numbers (like 1.1, 1.2, 1.3.1) as input and then restructures it into a corrected format. The structure is represented as a tree, and the corrected sequence is returned as a flat list, where each sequence follows a consistent numbering system based on its hierarchy.
+
+The input is submitted through a form, processed by PHP, and the result is returned as a JSON response, which is then used by JavaScript to display the data in a chart.
+
 Functions:
 1. restructure_sequence($input)
 Purpose: This function takes the input sequence (array of hierarchical values) and builds a tree structure based on the hierarchy represented by dots (e.g., 1.1, 1.2.1).
